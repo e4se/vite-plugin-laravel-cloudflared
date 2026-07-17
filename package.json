@@ -27,6 +27,7 @@
     ],
     "scripts": {
         "build": "npm run build-plugin",
+        "prepare": "npm run build"
         "build-plugin": "rm -rf dist && npm run build-plugin-esm",
         "build-plugin-esm": "esbuild src/index.js --platform=node --format=esm --outfile=dist/index.js",
         "lint": "eslint --ext .js ./src"
